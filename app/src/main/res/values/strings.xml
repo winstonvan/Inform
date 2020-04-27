@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Problematic Internet Use</string>
+    <string name="action_settings">Settings</string>
+    <string name="login">Login</string>
+
+    <string name="forgot">Forgot password?</string>
+    <string name="closeButton">Close button for activity</string>
+    <string name="newUser">Not a member yet? Sign up here.</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="registeredEmail">Please enter your registered email below:</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+
+    // login activity
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="showPassword">Show Password</string>
+    <string name="hidePassword">Hide Password</string>
+    <string name="alreadyUser">Already have account? Login here.</string>
+
+    // signup activity
+    <string name="fullName">Full Name</string>
+
+    <string name="signUp">Sign Up</string>
+
+    // test activity
+    <string name="testActivity">The IGD-20 Test</string>
+
+    // begin test activity
+    <string name="beginTestActivity">Begin Test</string>"
+    <string name="igdDescription">The IGD-20 test is a test developed in order to assess an individuals level of internet gaming addiction
+        (The American Psychiatric Association).</string>
+    <string name="criteria1">Preoccupation with video gaming.</string>
+    <string name="criteria2">Irritability, anxiety, or stress when not gaming.</string>
+    <string name="criteria3">Increasingly amounts of time spent gaming in order to achieve satisfaction.</string>
+    <string name="criteria4">Difficult to reduce gaming time.</string>
+    <string name="criteria5">Interests and hobbies lost as a result of gaming.</string>
+    <string name="criteria6">Gaming habits cause conflict between you and other people.</string>
+    <string name="criteria7">Deceiving people about the amount of gaming done.</string>
+    <string name="criteria8">Gaming done in order to escape negative feelings such as guilt, stress, or helplessness.</string>
+    <string name="criteria9">Jeopardized a relationship, job, or career opportunity because of gaming.</string>
+
+    // about activity
+    <string name="aboutDescription">According to the American Psychiatric Association, Internet Gaming Disorder is a disorder characterized by nine
+        criteria: preoccupation with gaming, withdrawal symptoms, the need to play to satisfy urges, inability to reduce playing time, giving up other
+        activities, continuing to game despite problems, deceiving family members about amount of playing time, the use of video games to avoid negative
+        feelings, and risk, having jeopardized or lost jobs or relationships due to gaming. This application provides users with a tool based on these nine
+        criteria to assess an internet gaming addiction.</string>
+
+    // quiz activity
+    <string name="question1">I often lose sleep because of long gaming sessions.</string>
+    <string name="question2">I never play games in order to feel better.</string>
+    <string name="question3">I have significantly increased the amount of time I play games over last year.</string>
+    <string name="question4">When I am not gaming I feel more irritable.</string>
+    <string name="question5">I have lost interest in other hobbies because of my gaming.</string>
+    <string name="question6">I would like to cut down my gaming time but it’s difficult to do.</string>
+    <string name="question7">I usually think about my next gaming session when I am not playing.</string>
+    <string name="question8">I play games to help me cope with any bad feelings I might have.</string>
+    <string name="question9">I need to spend increasing amounts of time engaged in playing games.</string>
+    <string name="question10">I feel sad if I am not able to play games.</string>
+    <string name="question11">I have lied to my family members because the amount of gaming I do.</string>
+    <string name="question12">I do not think I could stop gaming.</string>
+    <string name="question13">I think gaming has become the most time consuming activity in my life.</string>
+    <string name="question14">I play games to forget about whatever’s bothering me.</string>
+    <string name="question15">I often think that a whole day is not enough to do everything I need to do in-game.</string>
+    <string name="question16">I tend to get anxious if I can’t play games for any reason.</string>
+    <string name="question17">I think my gaming has jeopardized the relationship with my partner.</string>
+    <string name="question18">I often try to play games less but find I cannot.</string>
+    <string name="question19">I know my main daily activity has not been negatively affected by my gaming.  <font size="10">(i.e., occupation, education, homemaker, etc.)</font></string>
+    <string name="question20">I believe my gaming is negatively impacting on important areas of my life.</string>
+    <string name="submitAnswers">Submit</string>
+    <string name="stronglyAgree">Strongly Agree</string>
+    <string name="agree">Agree</string>
+    <string name="notSure">Not Sure</string>
+    <string name="disagree">Disagree</string>
+    <string name="stronglyDisagree">Strongly Disagree</string>
+
+    // test results activity
+    <string name="results">Test Results</string>
+    <string name="IGD">The IGD-20 test, also known as the Internet Gaming Disorder-20 test, was developed by the American Psychiatric Association
+        based on a six factors: salience, mood modification, tolerance, withdrawal symptoms, conflict, and relapse. Below with help further your
+        understanding of your IGD-20 score.</string>
+    <string name="salienceDescription">Preoccuption with Internet games. The individual thinks about previous gaming activity or anticipates playing
+        the next game; Internet gaming becomes the dominant activity in daily life.</string>
+    <string name="moodModificationDescription">Use of Internet games to escape or relieve a negative mood (eg., feelings of helplessness, guilt,
+        anxiety).</string>
+    <string name="toleranceDescription">The need to spend increasing amounts of time engaged in Internet games.</string>
+    <string name="withdrawalSymptomsDescription">Withdrawal symptoms when Internet gaming is taken away. These symptoms are typically described as
+        irritability, anxiety, or sadness, but are no physical signs of pharmacological withdrawal.</string>
+    <string name="conflictDescription">Loss of interests in previous hobbies and entertainment as a result of, and with the exception of, Internet
+        Games. Continued excessive use of Internet games despite knowledge of psychosocial problems. Has deceived family members, therapists, or
+        others regarding the amount of Internet gaming. Has jeopardised or lost a significant relationship, job, or educational career opportunity
+        because of participation in Internet games.</string>
+    <string name="relapseDescription">Unsuccessful attempts to control the participation in Internet games.</string>
+    <string name="casualGamerDescription">Individuals in this category scored low on all the six factors of described above (salience, mood
+        modification, tolerance, withdrawal symptoms, conflict, and relapse.</string>
+    <string name="regularGamerDescription">This class also classifies gamers that scored low on the six dimensions. One difference however,
+        is that regular gamers score higher on the mood modification factor. This means individuals often play to avoid negative feelings
+        such as stress or anxiety.</string>
+    <string name="lowRiskGamerDescription">Low-risk high engagement gamers that often play more than the regular gamer. Alike regular gamers,
+        individuals in this class often play to feel better. These gamers also may have a strong urge to play video games when they are not.
+        Individuals may find it difficult to reduce play time.</string>
+    <string name="atRiskGamerDescription">Individuals are more preoccupied with video games and it becomes the main activity in everyday life.
+        This may lead to loss in interests and hobbies. Tolerance increases as individuals feel the need to spend increasing amounts time playing
+        games. Unlike low-risk high engagement gamers, conflict and relapse factors are much lower.</string>
+    <string name="disorderedGamerDescription">Disordered gamers are individuals that scored high on all six dimensions of the IGD test. Gaming
+        is the main activity in life and at this point, it is very difficult to cut down playing time. Conflicts in everyday life are more likely
+        than not related to video gaming.</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+
+    // resource activity
+    <string name="resource1"><a href = "https://www.canada.ca/en/health-canada/services/substance-use/get-help/get-help-problematic-substance-use.html">Government of Canada - Get help with problematic substance use</a>\n</string>
+    <string name="resource2"><a href = "https://www.olganon.org/home">Online Gamer\'s Anonymous (Olga)</a></string>
+    <string name="resource3"><a href = "https://cgaa.info">Computer Gaming Addict\'s Anonymous (CGAA)</a></string>
+    <string name="resource4"><a href = "https://www.addictioncenter.com/drugs/video-game-addiction">Understanding Video Game Addiction</a></string>
+    <string name="resource5"><a href = "http://www.techaddiction.ca/computer-game-addiction-treatment.html">Five Types of Treatment for Computer Game Addiction</a></string>
+
+    <string name="about"><center><b>Welcome to Inform!</b></center>\n\n
+        \t\t\tWhat is Inform?
+        Inform is an app created to support its users through their experiences with internet gaming.
+        Using the American Psychiatric Association\'s diagnosis criteria for Internet Gaming Disorder,
+            Inform aims to enlighten its users to any potential risks posed by their gaming behaviours through a
+            brief Internet Gaming Disorder Test. Although Inform cannot diagnose, it is our hope to help people
+        by drawing awareness to areas of concern."
+    </string>
+</resources>

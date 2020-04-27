@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#009688</color>
+    <color name="colorWhiteGrey">#EEEEEE</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="buttonColor">#9E9E9E</color>
+
+
+    <!-- Dashboard icon colours -->
+    <color name="color1">#37BC9B</color>
+    <color name="color2">#DA4453</color>
+    <color name="color3">#D770AD</color>
+    <color name="color4">#4A89DC</color>
+    <color name="color5">#967ADC</color>
+    <color name="color6">#F68B42</color>
+    <color name="color7">#DF6672</color>
+    <color name="color8">#ECAAAF</color>
+</resources>

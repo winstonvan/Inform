@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "935362575469",
+    "firebase_url": "https://problematic-internet.firebaseio.com",
+    "project_id": "problematic-internet",
+    "storage_bucket": "problematic-internet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935362575469:android:3883f799644326d37cd364",
+        "android_client_info": {
+          "package_name": "com.winstonvan.problematicinternetuse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935362575469-kfuvkh0j4o2vtnr1a8e38s80ki0k7vav.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.winstonvan.problematicinternetuse",
+            "certificate_hash": "2116714c55dc9a4695b31cd8d68d8915e31ff150"
+          }
+        },
+        {
+          "client_id": "935362575469-0tsrhki59tsg1iivqj4chor4bqqahka4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbYjH777oCX8jRDgi0JjdGrEyRwLCDME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935362575469-0tsrhki59tsg1iivqj4chor4bqqahka4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

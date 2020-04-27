@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.winstonvan.problematicinternetuse.com.winstonvan.igd.TestResultsActivity">
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <!-- upper layer -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/color2"
+                            android:orientation="vertical"
+                            android:textColor="@color/colorWhite">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/color2"
+                                android:orientation="vertical"
+                                android:textColor="@color/colorWhite">
+
+                                <TextView
+                                    android:id="@+id/testResults"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="@string/results"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold"
+                                    tools:layout_editor_absoluteX="0dp"
+                                    tools:layout_editor_absoluteY="3dp" />
+
+                                <TextView
+                                    android:id="@+id/igdScore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="center"
+                                    android:text="Your IGD-20 score is"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+
+                                <TextView
+                                    android:id="@+id/testScore"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="70sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+
+                                <TextView
+                                    android:id="@+id/gamerProfile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="50dp"
+                                    android:gravity="center"
+                                    android:text="Disordered Gamer"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+                                //////////////////////////////////////////////////
+
+                                <TextView
+                                    android:id="@+id/salience"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="left"
+                                    android:text="Salience"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+
+                                <ProgressBar
+                                    android:id="@+id/salienceValue"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginBottom="10dp" />
+
+                                <TextView
+                                    android:id="@+id/moodModification"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="left"
+                                    android:text="Mood modification"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+
+                                <ProgressBar
+                                    android:id="@+id/moodModificationValue"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginBottom="10dp" />
+
+                                <TextView
+                                    android:id="@+id/tolerance"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="left"
+                                    android:text="Tolerance"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+
+                                <ProgressBar
+                                    android:id="@+id/toleranceValue"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginBottom="10dp" />
+
+                                <TextView
+                                    android:id="@+id/withdrawalSymptoms"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="left"
+                                    android:text="Withdrawal symptoms"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+
+                                <ProgressBar
+                                    android:id="@+id/withdrawalSymptomsValue"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginBottom="10dp" />
+
+                                <TextView
+                                    android:id="@+id/conflict"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="left"
+                                    android:text="Conflict"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+
+                                <ProgressBar
+                                    android:id="@+id/conflictValue"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginBottom="10dp" />
+
+                                <TextView
+                                    android:id="@+id/relapse"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:gravity="left"
+                                    android:text="Relapse"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="15sp"
+                                    tools:layout_editor_absoluteX="144dp"
+                                    tools:layout_editor_absoluteY="104dp" />
+
+                                <ProgressBar
+                                    android:id="@+id/relapseValue"
+                                    style="?android:attr/progressBarStyleHorizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="10dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_marginBottom="30dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!-- 2nd layer -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/whatIsThis"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="What is this?"
+                                android:textColor="@color/color7"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <TextView
+                                android:id="@+id/igd_description"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:padding="15sp"
+                                android:text="@string/IGD"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <TextView
+                                android:id="@+id/salienceSection"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="left"
+                                android:text="Salience"
+                                android:textColor="@color/color7"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/salienceDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/moodModificationSection"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="left"
+                                android:text="Mood Modification"
+                                android:textColor="@color/color7"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/moodModificationDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/toleranceSection"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="left"
+                                android:text="Tolerance"
+                                android:textColor="@color/color7"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/toleranceDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/withdrawalSymptomsSection"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="left"
+                                android:text="Withdrawal Symptoms"
+                                android:textColor="@color/color7"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/withdrawalSymptomsDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/conflictSection"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="left"
+                                android:text="Conflict"
+                                android:textColor="@color/color7"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/conflictDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"></TextView>
+
+                            <TextView
+                                android:id="@+id/relapseSection"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="15dp"
+                                android:gravity="left"
+                                android:text="Relapse"
+                                android:textColor="@color/color7"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginBottom="25dp"
+                                android:text="@string/relapseDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"></TextView>
+                        </LinearLayout>
+
+                        <!-- 3rd section -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/color2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/gamerTypes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="15sp"
+                                android:text="Gamer Types"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <ImageView
+                                android:id="@+id/igd_chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="215dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/igd"></ImageView>
+
+                            <TextView
+                                android:id="@+id/casualGamer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="left"
+                                android:text="Casual Gamer"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/casualGamerDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:gravity="left"
+                                android:text="@string/casualGamerDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/regularGamer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="left"
+                                android:text="Regular Gamer"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/regularGamerDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:gravity="left"
+                                android:text="@string/regularGamerDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/lowRiskGamer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="left"
+                                android:text="Low-risk High Engagement Gamer"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/lowRiskGamerDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:gravity="left"
+                                android:text="@string/lowRiskGamerDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/atRiskGamer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="left"
+                                android:text="At Risk High Engagement Gamer"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/atRiskGamerDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:gravity="left"
+                                android:text="@string/atRiskGamerDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/disorderedGamer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="left"
+                                android:text="Disordered Gamer"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+
+                            <TextView
+                                android:id="@+id/disorderedGamerDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:gravity="left"
+                                android:text="@string/disorderedGamerDescription"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15sp"
+                                tools:layout_editor_absoluteX="144dp"
+                                tools:layout_editor_absoluteY="104dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/whatNext"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="What are my next steps?"
+                                android:textColor="@color/color7"
+                                android:textSize="25sp"
+                                android:textStyle="bold"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="3dp" />
+
+                            <Button
+                                android:id="@+id/learnMore"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/color2"
+                                android:onClick="goResources"
+                                android:padding="20dp"
+                                android:text="Learn more"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorBlack"
+            app:itemIconTint="@color/colorWhite"
+            app:itemTextColor="@color/colorWhite"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation_menu" />
+    </FrameLayout>
+
+</LinearLayout>
