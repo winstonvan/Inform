@@ -11,52 +11,45 @@
         android:roundIcon="@drawable/user"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BeginTestActivity">
+        <activity android:name=".TestResultsActivity" />
+        <activity android:name=".ResourcesActivity" />
+        <activity android:name=".SettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.winstonvan.igd.TestResultsActivity" />
-        <activity android:name="com.winstonvan.igd.ResourcesActivity" />
-        <activity android:name="com.winstonvan.igd.SettingsActivity">
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".TestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.winstonvan.igd.AboutActivity" />
-        <activity android:name="com.winstonvan.igd.TestActivity">
+        <activity android:name=".ForgotPasswordActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.winstonvan.igd.ForgotPasswordActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.winstonvan.igd.LoginActivity">
+        <activity android:name=".RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.winstonvan.igd.RegisterActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.winstonvan.igd.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

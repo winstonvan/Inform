@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +20,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.winstonvan.problematicinternetuse.R;
 
 public class LoginActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
@@ -56,6 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         mShowPassword.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton button, boolean isChecked) {
+                // check if button is checked
                 if (isChecked) {
                     mShowPassword.setText(R.string.hidePassword);// change text
                     mPassword.setInputType(InputType.TYPE_CLASS_TEXT);

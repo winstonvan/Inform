@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.winstonvan.problematicinternetuse.R;
 
 public class SettingsActivity extends AppCompatActivity {
     FirebaseUser user;
@@ -34,7 +32,7 @@ public class SettingsActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         mSettingsEmailAddress = findViewById(R.id.settingsEmailAddress);
 
-        // nav
+        // initialize navigation bar
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
@@ -63,19 +61,21 @@ public class SettingsActivity extends AppCompatActivity {
             return;
         }
 
+        // save email button listener
         mSaveEmail.setOnClickListener(new View.OnClickListener() {
+
+            // get field inputs
             final String currentEmail = mCurrentEmail.getText().toString().trim();
             final String newEmail = mNewEmail.getText().toString().trim();
             final String confirmNewEmail = mConfirmNewEmail.getText().toString().trim();
-
 
             @Override
             public void onClick(View v) {
                 Log.e("Current email: ", currentEmail);
                 Log.e("New email: ", newEmail);
                 Log.e("Confirm new email: ", confirmNewEmail);
-                Toast.makeText(SettingsActivity.this, currentEmail, Toast.LENGTH_SHORT).show();
 
+                // error checking
                 if (!Utils.isEmailValid(currentEmail) || !Utils.isEmailValid(newEmail) || !Utils.isEmailValid(confirmNewEmail)) {
                     if (!Utils.isEmailValid(currentEmail))
                         mCurrentEmail.setError("Current email address is invalid.");
@@ -94,6 +94,7 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+        // save password button listener
         mSavePassword.setOnClickListener(new View.OnClickListener() {
             final String currentPassword = mCurrentPassword.getText().toString().trim();
             final String newPassword = mNewPassword.getText().toString().trim();
@@ -101,6 +102,7 @@ public class SettingsActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                // error checking
                 if (!Utils.isPasswordValid(currentPassword) || !Utils.isPasswordValid(newPassword) || !Utils.isPasswordValid(confirmNewPassword)) {
                     if (!Utils.isPasswordValid(currentPassword))
                         mCurrentPassword.setError("Current email is invalid.");
@@ -120,6 +122,7 @@ public class SettingsActivity extends AppCompatActivity {
         });
     }
 
+    // navigation bar listener
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +18,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.winstonvan.problematicinternetuse.R;
 
 import java.util.Map;
 
@@ -34,7 +33,7 @@ public class TestResultsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_results);
 
-        // nav
+        // initialize navigation bar
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
@@ -49,12 +48,17 @@ public class TestResultsActivity extends AppCompatActivity {
         mConflictValue = findViewById(R.id.conflictValue);
         mRelapseValue = findViewById(R.id.relapseValue);
 
-        // to hide if test not complete
+        // display "not complete" text and hide everything else if test not complete
         layout = findViewById(R.id.main);
         mainText = findViewById(R.id.mainText);
 
+        // connect to Firebase
         db = FirebaseFirestore.getInstance();
+
+        // get user UID
         String userUID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        // open Firebase collection
         DocumentReference documentReference = db.collection("users").document(userUID).collection("test").document("results");
         documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
             @Override
@@ -63,17 +67,21 @@ public class TestResultsActivity extends AppCompatActivity {
                     DocumentSnapshot document = task.getResult();
                     Map<String, Object> map = document.getData();
 
-                    // check if test has been taken before
+                    // test not complete
                     if (!document.exists()) {
                         mainText.setVisibility(TextView.VISIBLE);
                         mainText.setText("Results will appear once test is complete.");
                         layout.setVisibility(TextView.GONE);
 
 
-                    } else {
+                    }
+
+                    // test completed
+                    else {
+                        // unhide main layout
                         layout.setVisibility(TextView.VISIBLE);
 
-                        // get data by key
+                        // get fields from Firebase to display
                         for (Map.Entry<String, Object> entry : map.entrySet()) {
                             if (entry.getKey().equals("Gamer type")) {
                                 mGamerProfile.setText(entry.getValue().toString() + " gamer");
@@ -106,6 +114,7 @@ public class TestResultsActivity extends AppCompatActivity {
         });
     }
 
+    // navigation bar listener
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

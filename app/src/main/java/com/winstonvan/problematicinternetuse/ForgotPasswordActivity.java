@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.winstonvan.problematicinternetuse.R;
 
 public class ForgotPasswordActivity extends AppCompatActivity {
     FirebaseAuth mAuth;

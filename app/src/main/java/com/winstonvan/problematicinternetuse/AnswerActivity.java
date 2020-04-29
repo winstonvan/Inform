@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 class AnswerActivity {
     int question;

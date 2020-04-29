@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.winstonvan.problematicinternetuse.R;
 
 public class ResourcesActivity extends AppCompatActivity {
 
@@ -22,7 +21,7 @@ public class ResourcesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resources);
 
-        // nav
+        // initialize navigation bar
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
@@ -33,7 +32,7 @@ public class ResourcesActivity extends AppCompatActivity {
         resource4 = findViewById(R.id.resource4);
         resource5 = findViewById(R.id.resource5);
 
-        // initialise links
+        // initialize links
         resource1.setMovementMethod(LinkMovementMethod.getInstance());
         resource2.setMovementMethod(LinkMovementMethod.getInstance());
         resource3.setMovementMethod(LinkMovementMethod.getInstance());
@@ -41,6 +40,7 @@ public class ResourcesActivity extends AppCompatActivity {
         resource5.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
+    // navigation bar listener
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

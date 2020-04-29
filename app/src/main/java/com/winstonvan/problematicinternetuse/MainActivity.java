@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,6 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.winstonvan.problematicinternetuse.R;
 
 public class MainActivity extends AppCompatActivity {
     FirebaseAuth mAuth;

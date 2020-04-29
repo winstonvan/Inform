@@ -1,4 +1,13 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,20 +19,9 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.winstonvan.problematicinternetuse.R;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 public class RegisterActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
@@ -63,7 +61,7 @@ public class RegisterActivity extends AppCompatActivity {
                 final String registerFullName = mFullName.getText().toString().trim();
                 String registerConfirmPassword = mConfirmPassword.getText().toString().trim();
 
-                // field validation
+                // error checking
                 if (!Utils.isEmailValid(registerEmail) || !Utils.isPasswordValid(registerPassword) ||
                         !(Utils.isConfirmPasswordValid(registerPassword, registerConfirmPassword)) || TextUtils.isEmpty(registerFullName)) {
                     if (!Utils.isEmailValid(registerEmail))
@@ -121,17 +119,5 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
             }
         });
-    }
-
-    public static boolean emailIsValid(String email) {
-        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\." +
-                "[a-zA-Z0-9_+&*-]+)*@" +
-                "(?:[a-zA-Z0-9-]+\\.)+[a-z" +
-                "A-Z]{2,7}$";
-
-        Pattern pat = Pattern.compile(emailRegex);
-        if (email == null)
-            return false;
-        return pat.matcher(email).matches();
     }
 }

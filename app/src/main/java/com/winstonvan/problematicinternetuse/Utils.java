@@ -1,10 +1,4 @@
-package com.winstonvan.igd;
-
-import android.text.TextUtils;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.TextView;
+package com.winstonvan.problematicinternetuse;
 
 import java.util.regex.Pattern;
 

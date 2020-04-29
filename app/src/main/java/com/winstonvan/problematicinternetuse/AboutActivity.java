@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.winstonvan.problematicinternetuse.R;
 
 public class AboutActivity extends AppCompatActivity {
     TextView mAboutDescription;
@@ -20,13 +19,15 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        // nav
+        // initialize navigation bar
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
+        // about description
         mAboutDescription = findViewById(R.id.aboutDescription);
     }
 
+    // navigation bar listener
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override

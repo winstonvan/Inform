@@ -1,4 +1,4 @@
-package com.winstonvan.igd;
+package com.winstonvan.problematicinternetuse;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -19,7 +19,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.winstonvan.problematicinternetuse.R;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -43,7 +42,7 @@ public class TestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        // nav
+        // initialize navigation bar
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
@@ -240,6 +239,7 @@ public class TestActivity extends AppCompatActivity {
         });
     }
 
+    // navigation bar listener
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
@@ -247,6 +247,7 @@ public class TestActivity extends AppCompatActivity {
                     leave = false;
                     final MenuItem item2 = item;
 
+                    // if test has already been started, prompt user to stay or leave
                     if (index > 0) {
                         final AlertDialog.Builder alert2;
                         alert2 = new AlertDialog.Builder(TestActivity.this);
@@ -254,10 +255,13 @@ public class TestActivity extends AppCompatActivity {
                         alert2.setTitle("Leaving this page will erase your progress. Do you wish to continue?");
                         AlertDialog.Builder builder = alert2;
 
+                        // stay button will do nothing
                         alert2.setPositiveButton("Stay", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialogInterface, int i) {
                             }
                         });
+
+                        // leave button will redirect user to specified activity
                         alert2.setNegativeButton("Leave", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 if (item.getItemId() == R.id.navigation_test)
@@ -283,7 +287,10 @@ public class TestActivity extends AppCompatActivity {
                             }
                         });
                         alert2.show();
-                    } else {
+                    }
+
+                    // test hasn't been started, no prompt needed, start activity immediately
+                    else {
                         if (item.getItemId() == R.id.navigation_test)
                         {
                             startActivity(new Intent(getApplicationContext(), TestActivity.class));
