@@ -34,7 +34,7 @@ Internet Gaming Disorder Assessment Tool
 <img src="https://i.imgur.com/A6wgPxA.png" />
 
 <h5>Extracting the zip</h5>
-<img src="https://i.gyazo.com/398f77929b5bf8334febe3c0ffd8773a.gif" />
+<img src="https://i.gyazo.com/98e02bd2fbaafd4dc6fe51dce1961ca8.gif" />
 
 <h5>Android Studio Installation</h5>
 <a href="https://developer.android.com/studio/index.html">Android Studio</a></li>
