@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="com.winstonvan.problematicinternetuse.com.winstonvan.igd.TestResultsActivity">
+    tools:context="com.winstonvan.inform.com.winstonvan.igd.TestResultsActivity">
 
     <TextView
         android:id="@+id/mainText"

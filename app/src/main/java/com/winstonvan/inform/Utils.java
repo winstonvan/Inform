@@ -1,4 +1,4 @@
-package com.winstonvan.problematicinternetuse;
+package com.winstonvan.inform;
 
 import java.util.regex.Pattern;
 

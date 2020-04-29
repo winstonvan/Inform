@@ -1,4 +1,4 @@
-package com.winstonvan.problematicinternetuse;
+package com.winstonvan.inform;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
