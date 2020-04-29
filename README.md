@@ -46,8 +46,8 @@ Internet Gaming Disorder Assessment Tool
 <h5>Setting up the virtual device (emulator)</h5>
 <img src="https://i.imgur.com/KI34lXb.png" />
 <img src="https://i.imgur.com/Yo5SHJS.png" />
-<img src="https://i.imgur.com/6Oqjqq8.png" />
 <img src="https://i.imgur.com/7byDiOt.png" />
+<img src="https://i.imgur.com/6Oqjqq8.png" />
 <img src="https://i.imgur.com/7byDiOt.png" />
 <img src="https://i.imgur.com/sSDoADg.png" />
 
