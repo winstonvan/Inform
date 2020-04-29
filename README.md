@@ -41,7 +41,7 @@ Internet Gaming Disorder Assessment Tool
 <img src="https://i.gyazo.com/4a7b057f192a8407f7f437c0ab94f108.gif" />
 
 <h5>Importing the project</h5>
-<img src="https://i.gyazo.com/398f77929b5bf8334febe3c0ffd8773a.gif" />
+<img src="https://i.gyazo.com/b47c40a0baefa6cdc8b4d9dd2e1938cf.gif" />
 
 <h5>Setting up the virtual device (emulator)</h5>
 <img src="https://i.imgur.com/KI34lXb.png" />
