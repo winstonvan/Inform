@@ -28,5 +28,29 @@ Internet Gaming Disorder Assessment Tool
   <li>1280 x 800 minimum screen resolution</li>
 </ul>
 
-<h2>Android Studio Installation</h2>
+<h2>Building the application</h2>
+
+<h5>Downloading the project</h5>
+<img src="https://i.imgur.com/A6wgPxA.png" />
+
+<h5>Extracting the zip</h5>
+<img src="https://i.gyazo.com/398f77929b5bf8334febe3c0ffd8773a.gif" />
+
+<h5>Android Studio Installation</h5>
 <a href="https://developer.android.com/studio/index.html">Android Studio</a></li>
+<img src="https://i.gyazo.com/4a7b057f192a8407f7f437c0ab94f108.gif" />
+
+<h5>Importing the project</h5>
+<img src="https://i.gyazo.com/398f77929b5bf8334febe3c0ffd8773a.gif" />
+
+<h5>Setting up the virtual device (emulator)</h5>
+<img src="https://i.imgur.com/KI34lXb.png" />
+<img src="https://i.imgur.com/Yo5SHJS.png" />
+<img src="https://i.imgur.com/7byDiOt.png" />
+<img src="https://i.imgur.com/6Oqjqq8.png" />
+<img src="https://i.imgur.com/7byDiOt.png" />
+<img src="https://i.imgur.com/sSDoADg.png" />
+
+<h5>Running the application</h5>
+<img src="https://i.gyazo.com/ff94f1c21221b479b56ef05a3c7438ff.gif" />
+<img src="https://i.imgur.com/WHjfpl7.png" />
