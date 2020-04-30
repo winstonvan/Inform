@@ -28,7 +28,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         mSubmitButton = findViewById(R.id.forgotPasswordSubmit);
         mEmailAddress = findViewById(R.id.forgotPasswordEmailAddress);
 
-        // initialize Firebase
+        // get Firebase instance
         mAuth = FirebaseAuth.getInstance();
 
         // back button listener
@@ -46,16 +46,19 @@ public class ForgotPasswordActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String forgotPasswordEmail = mEmailAddress.getText().toString().trim();
 
+                // return if email invalid
                 if (!Utils.isEmailValid(forgotPasswordEmail)) {
                     mEmailAddress.setError("Invalid email address.");
                     return;
                 }
 
-                // send password reset to Firebase
+                // send password reset link to email
                 mAuth.sendPasswordResetEmail(forgotPasswordEmail).addOnCompleteListener(ForgotPasswordActivity.this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
+
+                            // return to login activity if successful
                             startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                             return;
                         }

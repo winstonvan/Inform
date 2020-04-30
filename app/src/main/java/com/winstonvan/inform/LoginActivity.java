@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
         // check if user already logged in
-        if (mAuth.getCurrentUser() != null) {
+        if (mAuth.getCurrentUser() != null) { // if current user is not null (logged in), go to main activity
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
             return;
         }
@@ -83,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
                     if (!Utils.isPasswordValid(loginPassword))
                         mPassword.setError("Password is invalid.");
                     Toast.makeText(LoginActivity.this, "Login unsuccessful", Toast.LENGTH_SHORT).show();
-                    return;
+                    return; // return if email invalid
                 }
 
                 // log user in
