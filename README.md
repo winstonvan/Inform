@@ -1,6 +1,9 @@
 # Inform
 Internet Gaming Disorder Assessment Tool 
 
+<details>
+<summary>Building the application</summary>
+  
 <h1>Requirements</h1>
 <h3>Windows Requirements</h3>
 <ul>
@@ -27,9 +30,6 @@ Internet Gaming Disorder Assessment Tool
   <li>2 GB of available disk space minimum, 4 GB recommended (500 MB for IDE plus 1.5 GB for Android SDK and emulator system image)</li>
   <li>1280 x 800 minimum screen resolution</li>
 </ul>
-
-<details>
-<summary>Building the application</summary>
 
 <h3>Downloading the project</h3>
 <img src="https://i.imgur.com/A6wgPxA.png" />
