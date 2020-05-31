@@ -28,7 +28,8 @@ Internet Gaming Disorder Assessment Tool
   <li>1280 x 800 minimum screen resolution</li>
 </ul>
 
-<h1>Building the application</h1>
+<details>
+<summary>Building the application</summary>
 
 <h3>Downloading the project</h3>
 <img src="https://i.imgur.com/A6wgPxA.png" />
@@ -53,3 +54,4 @@ Internet Gaming Disorder Assessment Tool
 <h3>Running the application</h3>
 <img src="https://i.gyazo.com/ff94f1c21221b479b56ef05a3c7438ff.gif" />
 <img src="https://i.imgur.com/WHjfpl7.png" />
+</details>
