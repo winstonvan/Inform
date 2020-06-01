@@ -1,5 +1,6 @@
 # Inform
-Internet Gaming Disorder Assessment Tool. Written in Java for Android. Uses the Google Firebase API for user authentication and Google's Cloud Firestore to store data.
+Internet Gaming Disorder Assessment Tool. This tool is based on the first standardized psychometric tool to assess Internet Gaming Disorder (Pontes et al., 2014).
+Written in Java for Android. Uses the Google Firebase API for user authentication and Google's Cloud Firestore to store data.
 
 <details>
 <summary>Building the application</summary>
